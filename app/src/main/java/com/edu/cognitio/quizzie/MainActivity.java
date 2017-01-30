@@ -1,0 +1,262 @@
+package com.edu.cognitio.quizzie;
+
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.mikepenz.materialdrawer.AccountHeader;
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.model.interfaces.IProfile;
+import com.parse.ParseUser;
+
+import fr.ganfra.materialspinner.MaterialSpinner;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    MaterialSpinner spinner;
+
+    private static final int PROFILE_SETTING = 1;
+    private AccountHeader headerResult = null;
+    private Drawer result = null;
+    IProfile profile;
+    SharedPreferences sp ;
+    SharedPreferences.Editor editor;
+    ParseUser user;
+    Toolbar toolbar;
+
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    private int[] tabIcons = {
+            R.drawable.untitled,
+            R.drawable.untitled,
+            R.drawable.untitled
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.content_main);
+//      toolbar = (Toolbar) findViewById(R.id.app_bar);
+//        setSupportActionBar(toolbar);
+//
+
+        TextView toolbartitle = (TextView)findViewById(R.id.toolbar_title);
+        Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/font.ttf");
+        toolbartitle.setTypeface(custom_font);
+
+      //  getSupportActionBar().setIcon(getResources().getDrawable(R.drawable.h));
+
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
+
+
+        viewPager.setCurrentItem(1);
+
+        user  = ParseUser.getCurrentUser();
+        // Toast.makeText(getApplicationContext(), " " + user.getEmail() + " " + user.get("name"), Toast.LENGTH_LONG);
+
+
+        ImageView im = (ImageView)findViewById(R.id.im);
+        ImageView im1 = (ImageView)findViewById(R.id.im1);
+        ImageView im2 = (ImageView)findViewById(R.id.im2);
+
+        im.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(2);
+                ImageView im = (ImageView)findViewById(R.id.im);
+                ImageView im1 = (ImageView)findViewById(R.id.im1);
+                ImageView im2 = (ImageView)findViewById(R.id.im2);
+                im.setImageResource(R.drawable.sta);
+                im2.setImageResource(R.drawable.profile);
+            }
+        });
+        im1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(1);
+                ImageView im = (ImageView)findViewById(R.id.im);
+                ImageView im2 = (ImageView)findViewById(R.id.im2);
+              //  ImageView im1 = (ImageView)findViewById(R.id.im1);
+               // im1.setImageResource(R.drawable.pro);
+                im2.setImageResource(R.drawable.profile);
+                im.setImageResource(R.drawable.stats);
+            }
+        });
+im2.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        viewPager.setCurrentItem(0);
+
+    }
+});
+
+
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if(position==0){
+                    ImageView im = (ImageView)findViewById(R.id.im);
+                    ImageView im1 = (ImageView)findViewById(R.id.im1);
+                    ImageView im2 = (ImageView)findViewById(R.id.im2);
+
+                    im2.setImageResource(R.drawable.pro);
+                    im.setImageResource(R.drawable.stats);
+                   // im1.setColorFilter(Color.argb(255, 238, 238, 238));
+
+                }
+
+                if(position==1){
+                    ImageView im = (ImageView)findViewById(R.id.im);
+                    ImageView im2 = (ImageView)findViewById(R.id.im2);
+                    ImageView im1 = (ImageView)findViewById(R.id.im1);
+                    im2.setImageResource(R.drawable.profile);
+                    im.setImageResource(R.drawable.stats);
+                   // im1.setImageResource(R.drawable.home);
+
+                }
+                if(position==2){
+                    ImageView im = (ImageView)findViewById(R.id.im);
+                    ImageView im1 = (ImageView)findViewById(R.id.im1);
+                    ImageView im2 = (ImageView)findViewById(R.id.im2);
+                    im.setImageResource(R.drawable.sta);
+                    im2.setImageResource(R.drawable.profile);
+                    //im1.setColorFilter(Color.argb(255, 238, 238, 238));
+
+
+                }
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+
+
+        });
+
+
+
+    }
+
+    private void setupTabIcons() {
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+    }
+
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new Profile(), "Profile");
+        adapter.addFragment(new Home(), "Home");
+        adapter.addFragment(new Stats(), "Stats");
+        viewPager.setAdapter(adapter);
+    }
+
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
+
+        public ViewPagerAdapter(FragmentManager manager) {
+            super(manager);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFragment(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return null;
+        }
+    }
+
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+
+
+//        if (id == R.id.logout) {
+//            ProgressDialog dialog = new ProgressDialog(MainActivity.this);
+//            dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+//            dialog.setMessage("Logging Out...");
+//            dialog.setIndeterminate(true);
+//            dialog.setCanceledOnTouchOutside(false);
+//            dialog.show();
+//            ParseUser currentUser = ParseUser.getCurrentUser();
+//            ParseUser.logOut();
+//            ParseUser currentUserafterlogout = ParseUser.getCurrentUser();
+//
+//            if (currentUserafterlogout == null) {
+//                Intent intent = new Intent(MainActivity.this, LoginSignupActivity.class);
+//                startActivity(intent);
+//                //dialog.dismiss();
+//                Toast.makeText(getApplicationContext(), "Successfully Logged Out", Toast.LENGTH_LONG).show();
+//            } else {
+//                //dialog.dismiss();
+//                Toast.makeText(getApplicationContext(), "Could Not Log Out. Please Try Again.", Toast.LENGTH_LONG).show();
+//            }
+//
+//        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+
+    }
+}

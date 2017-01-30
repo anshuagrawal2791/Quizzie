@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_gravity="center"
+                android:src="@drawable/userdefault"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update "
+                android:id="@+id/update_dp"
+                android:layout_below="@+id/dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Name"
+                    android:ems="10"
+                    android:id="@+id/name"
+                    android:layout_weight="1"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_weight="1"
+                android:id="@+id/classsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_multiline="false"
+                app:ms_hint="Select Class"
+                app:ms_enableFloatingLabel="true"
+                app:ms_enableErrorLabel="true"
+                app:ms_floatingLabelText="Class"
+                app:ms_baseColor="@color/colorAccent"
+                app:ms_highlightColor="@color/colorAccent"
+                app:ms_errorColor="@color/error"
+
+                app:ms_thickness="1dp"
+                app:ms_hintColor="@color/hint"
+                app:ms_arrowColor="@color/base"
+                app:ms_arrowSize="8dp"
+                app:ms_alignLabels="false"
+                app:ms_floatingLabelColor="@color/colorAccent"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+            <EditText
+                android:hint="City"
+                android:layout_weight="1"
+                android:id="@+id/citysp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_weight="1"
+                android:id="@+id/updateprofile"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statstv"
+            android:text=""
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edu.cognitio.quizzie.Home"
+    android:background="#1f2329">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a Class"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/six"
+        android:layout_gravity="top"
+
+        android:background="@drawable/six"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:id="@+id/seven"
+        android:layout_gravity="center_horizontal|top"
+
+        android:background="@drawable/seven"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:id="@+id/eight"
+        android:layout_gravity="right|top"
+
+        android:background="@drawable/eight"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/nine"
+    android:layout_gravity="left|center_vertical"
+
+    android:background="@drawable/nine"
+        android:layout_margin="10dp" />
+
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ten"
+        android:layout_gravity="center"
+
+        android:background="@drawable/ten"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/eleven"
+    android:layout_gravity="right|center_vertical"
+
+        android:background="@drawable/eleven"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/twelve"
+    android:layout_gravity="center_horizontal|bottom"
+
+        android:background="@drawable/twelve"
+        android:layout_margin="10dp" />
+
+</FrameLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#1f2329">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/playerdp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"
+            android:layout_marginLeft="2dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playername"
+            android:text="player"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:gravity="left"
+            android:textColor="#ecebeb" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:background_progressbar_color="#FFCDD2"
+            app:background_progressbar_width="3dp"
+            app:progressbar_color="#F44336"
+            app:progressbar_width="3dp"
+            android:id="@+id/timer"
+
+            android:gravity="center_horizontal"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="9dp"
+                android:id="@+id/timertv"
+                android:textColor="#ecebeb"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/computer"
+            android:text="Computer"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#ecebeb" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playerscore"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="#ecebeb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#ecebeb" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/computerscore"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="#ecebeb" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compdp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#000000"
+            android:layout_marginRight="2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:max="10"
+            android:progress="0"
+            android:id="@+id/playerprogressbar"
+            android:progressDrawable="@drawable/progress_drawable" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/optionA"
+                    android:layout_margin="5dp"
+                   />
+                 <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:id="@+id/optionB"
+                     android:layout_margin="5dp"
+                     />
+                 <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:id="@+id/optionC"
+                     android:layout_margin="5dp"
+                     />
+                 <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:id="@+id/optionD"
+                     android:layout_margin="5dp"
+                     />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/creditstv"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:max="10"
+            android:progress="0"
+            android:id="@+id/compprogressbar"
+            android:progressDrawable="@drawable/progress_drawable" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

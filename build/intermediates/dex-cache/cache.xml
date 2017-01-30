@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/internal_impl-23.1.1-d102019bf9ed2bebbebe580beacab56e228e3d56.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-6be45af6930f7d037c5c90875d4f6a3dcb34b5cc.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.mikepenz/iconics-core/2.5.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="39424478261a9f98810223352349ea3e0e6d3691">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-dd921d39ac9acec8382f7498bc39fe5900d012ea.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.7/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="939915915c0370df247ccce50b0e3b7d283e2079">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-556f09dfde40a025688b384acd03fdd6b1609e39.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-f372affbf8c915ae5f6face17794d88f030ad47b.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.mikepenz/google-material-typeface/2.2.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="861dd8b4d38117b27f7e95c9fd555f69fe668138">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-f271083db6384713753bea76c8ad8a36eb31c8a1.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.wang.avi/library/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4968500e276d051b8ed8135f1a0254120f6c600d">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-ef856226c464e38d9143a3dcf138e69752ca41c9.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/support-annotations-23.1.1-39eba76649ae9be60ec73270a37a5f11d48a4f4b.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="40da745b1ae1f5b7562242e27dbc91a6b0fab3e9">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-6ce9af6f751d2b611602a8de2341e681a578219b.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/libs/ParseFacebookUtilsV4-1.10.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b2cc313c93e9401d61d5c85e8b6211022f4d108c">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/ParseFacebookUtilsV4-1.10.3-170047c7cec4edebf77034869429ad733377c2ab.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.oguzdev/CircularFloatingActionMenu/1.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="607d961caf1a59b6e782724654c1f3229e036c20">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-b544e35a54486d48af59a5c1d37ff71f00683095.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-cards/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9ec1d846000db2b979dac2159584f027195a8174">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-0e09df2014ce494ad2f20f66d51b1717a5c53f7a.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/cardslib-core/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8190861e323934dad89d5e6b830ea66878c11970">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-81868ec3f9d2461cbc8a482dcff1ef642c3354a0.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="25e8af11fff99ad02250f52f2436e25f60cc1bbe">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-2f24cf11cb8c73c66c3d31ad6b21c56ff3cf2704.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.1.6/b036abbb61656165da99cf44898e4b9123687e65/MPAndroidChart-v2.1.6.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b036abbb61656165da99cf44898e4b9123687e65">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/MPAndroidChart-v2.1.6-9b24cc6aec86b7efdc7a7e3c862655dc03e09576.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="22886d910315028a2b34b1ba068c265534ade87a">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-a9bb632c021e662f42068feb2909a94362fa6494.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-0222e53dccc350cfea650f8b2bb01a8f92fe8d7b.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/glide-3.6.1-94d062206325691df89516c17724e8a916c30766.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-d034634d8a7429cf890c233ef1ce9750a45dbf92.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/library-2.4.0-4fe3b729828cc52130b94c4a0022cdc21bbe0574.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-bc8dcc9adfff2f40c741cdfb5c612900278aeb45.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.github.ganfra/material-spinner/1.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d0df3bf618b078d102a4234ceff33c44026e64b9">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-835b6f6b7244df8155f6cc47a27e33708f7fbac8.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.mikhaellopez/circularprogressbar/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="961216476b6e97986980dd2c4ad1523b4162486e">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-e1f70c81644c3ccafad0f355e004fc2ee97024a7.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/bolts-android-1.2.0-d211f8114ba1fe1fdc5ff5ebf1654f420ef0f0b4.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/libs/Parse-1.11.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="54a0d027ea5d5b0dae92833991bb68f9b3da6ca6">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/Parse-1.11.0-cf4ef204966154c4c68ef2f6180fe9e9f56403c5.jar" />
+    </item>
+    <item
+        jar="/Users/anshu/Documents/cognitio/app/build/intermediates/exploded-aar/com.github.bmarrdev/android-DecoView-charting/v0.9.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="76ee8702e3f0664dbe584cf86577953a0ca387f1">
+        <dex dex="/Users/anshu/Documents/cognitio/app/build/intermediates/pre-dexed/release/classes-c766675e0308b25fd78960232d41c02721df9f63.jar" />
+    </item>
+
+</items>
